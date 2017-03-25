@@ -1,0 +1,41 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>index3</title>
+</head>
+<body>
+    <div>
+        <table style="border:double">
+            <thead>
+                <tr>
+                    <th>
+                        Ad
+                    </th>
+                    <th>
+                        Soyadı
+                    </th>
+                </tr>
+            </thead>
+            <tbody >
+
+                @{
+                    foreach (var item in ViewBag.kullanicilar)
+                    {
+                        <tr>
+                            <td>@item.adi</td>
+                            <td>@item.soyadi</td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
