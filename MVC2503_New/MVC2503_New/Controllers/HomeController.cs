@@ -11,6 +11,8 @@ namespace MVC2503_New.Controllers
         // GET: Home
         public ActionResult Index()
         {
+            ViewData["Mesaj 1"] = "Bu bir Viewdata 1 mesajıdır";
+            ViewData["Mesaj 2"] = "Bu bir Viewdata 2 mesajıdır";
             return View();
         }
     }
